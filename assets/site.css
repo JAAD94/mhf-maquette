@@ -485,7 +485,7 @@ hr.sep { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
 .hero-irw .slide-text { bottom: clamp(4.5rem, 10vh, 7rem); }
 .hero-page .slides { height: clamp(460px, 70vh, 740px); }
 .hero-page .slide-text { bottom: clamp(6rem, 12vh, 8.5rem); }
-.hero-page .slide figcaption { bottom: auto; top: 14px; }
+.hero-page .slide figcaption { bottom: auto; top: 96px; }
 .hero-after { position: relative; z-index: 4; background: var(--surface); display: flow-root; }
 .hero-after > .wrap { margin-top: -64px; }
 .hero-after .hero-card { margin-bottom: 0; }
