@@ -1,0 +1,95 @@
+/* Campagne « Inestimable et déductible » (fin 2026), intégrée au gabarit du prototype.
+   Toutes les règles sont limitées à main.cmp ou préfixées c- : aucune incidence sur les autres pages. */
+.cmp { --cmp-display: "Barlow Condensed", "Arial Narrow", sans-serif; --cmp-light: #4fcbe6; --cmp-red: #e2231a; }
+
+/* titres : capitales condensées de la campagne */
+.cmp .section-head h2, .cmp .c-final h2, .cmp .half-text h2 { font-family: var(--cmp-display); font-weight: 800; text-transform: uppercase; letter-spacing: .005em; line-height: .95; font-size: clamp(2.2rem, 4.6vw, 3.4rem); }
+.cmp .card h3, .cmp .c-rate h3, .cmp .steps h3 { font-family: var(--cmp-display); font-weight: 800; text-transform: uppercase; letter-spacing: .01em; line-height: 1.02; font-size: 1.35rem; }
+
+/* en-tête photo */
+.hero-cmp .slide-text { justify-items: start; text-align: left; max-width: var(--wrap); margin-inline: auto; padding-inline: max(20px, env(safe-area-inset-left, 0px)) max(20px, env(safe-area-inset-right, 0px)); }
+.hero-cmp .slide::after { background: linear-gradient(180deg, rgba(18,63,107,0) 25%, rgba(18,63,107,.55) 55%, rgba(18,63,107,.95) 100%); }
+.hero-cmp .kicker { background: var(--sky); color: #fff; font: 700 .95rem/1 var(--cmp-display); letter-spacing: .1em; padding: .5rem .85rem; }
+.hero-cmp .title { font-family: var(--cmp-display); font-weight: 800; text-transform: uppercase; letter-spacing: .005em; line-height: .88; font-size: clamp(2.8rem, min(7.5vw, 9vh), 5.8rem); max-width: none; }
+.hero-cmp .title b { display: block; color: var(--cmp-light); }
+.hero-cmp .sub { max-width: 42ch; font-weight: 600; }
+.c-tag { display: inline-flex; align-items: baseline; gap: .6rem; margin: .2rem 0 .4rem; padding: .4rem 1.3rem .3rem; background: var(--sky); color: #fff; transform: skewX(-12deg); font-family: var(--cmp-display); }
+.c-tag > * { transform: skewX(12deg); }
+.c-tag span { font-size: 1.8rem; font-weight: 700; }
+.c-tag b { font-size: 3rem; font-weight: 800; line-height: 1; }
+
+/* compte à rebours + chiffres */
+.c-band-grid { display: grid; grid-template-columns: minmax(260px, 1fr) 2.2fr; gap: 2rem; align-items: center; }
+.c-band .stats { margin: 0; }
+.c-countdown { display: flex; gap: 1rem; align-items: center; }
+.c-countdown p { margin: 0; font-weight: 600; }
+.c-cd-num { display: block; font: 800 2rem/1 var(--cmp-display); text-transform: uppercase; color: var(--sky-deep); }
+.c-cal { flex: none; width: 72px; border-radius: 10px; overflow: hidden; background: #fff; text-align: center; box-shadow: var(--shadow-sm); color: #123f6b; }
+.c-cal .m { display: block; background: var(--cmp-red); color: #fff; font: 800 .95rem/1 var(--cmp-display); text-transform: uppercase; padding: .35rem 0 .3rem; }
+.c-cal .d { display: block; font: 800 2.4rem/1.1 var(--cmp-display); padding-bottom: .15rem; }
+
+/* taux */
+.c-rates { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 1.4rem; margin: 0 0 2.4rem; }
+.c-rate { background: var(--card); border: 1px solid var(--line); border-left: 8px solid var(--sky); border-radius: var(--r); padding: 1.6rem 1.8rem; }
+.c-pct { font: 800 4.6rem/.9 var(--cmp-display); color: var(--sky-deep); margin: 0 0 .4rem; }
+.c-rate p:last-child { margin: 0; color: var(--muted); }
+
+/* simulateur */
+.c-simu-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: start; }
+.c-simu-grid > * { min-width: 0; }
+.c-simu label { display: block; font-weight: 700; margin: 1.2rem 0 .45rem; }
+.c-simu input, .c-simu select { width: 100%; min-height: 52px; padding: .6rem .9rem; border: 2px solid var(--line); border-radius: 12px; background: var(--card); color: var(--ink); font: 700 1.1rem var(--body); }
+.c-simu input:focus, .c-simu select:focus { border-color: var(--sky); outline: none; box-shadow: 0 0 0 3px rgba(37,187,219,.25); }
+.c-simu input[aria-invalid="true"] { border-color: var(--cmp-red); }
+.c-amount { display: grid; gap: .6rem; }
+.c-chips { display: flex; flex-wrap: wrap; gap: .5rem; }
+.c-chips button { min-height: 42px; padding: .4rem 1rem; border-radius: var(--pill); border: 2px solid var(--sky); background: var(--card); color: var(--sky-deep); font: 700 .95rem var(--body); cursor: pointer; }
+.c-chips button[aria-pressed="true"] { background: var(--sky); color: #fff; }
+.c-more { margin-top: 1.2rem; border-top: 1px solid var(--line); padding-top: .8rem; }
+.c-more summary { cursor: pointer; font-weight: 700; color: var(--sky-deep); }
+.c-err { color: var(--cmp-red); font-weight: 700; margin-top: .8rem; }
+.c-result { background: var(--sky); color: #fff; border-radius: 24px; padding: clamp(1.6rem, 4vw, 2.4rem); position: sticky; top: 100px; box-shadow: var(--shadow); }
+.c-r-label { font: 700 1rem/1 var(--cmp-display); text-transform: uppercase; letter-spacing: .12em; margin: 0 0 .4rem; }
+.c-r-big { font: 800 clamp(3.4rem, 8vw, 5.2rem)/.9 var(--cmp-display); margin: 0 0 .6rem; }
+.c-r-line { font-size: 1.15rem; }
+.c-r-detail { list-style: none; padding: 0; margin: 0 0 1.4rem; font-size: .95rem; }
+.c-r-detail li { padding: .35rem 0; border-top: 1px solid rgba(255,255,255,.35); }
+.c-r-note { font-size: .82rem; line-height: 1.45; margin: 1.2rem 0 0; opacity: .95; }
+.c-block { width: 100%; }
+
+/* exemples */
+.c-cards { grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); }
+.c-price { font: 800 1.75rem/1 var(--cmp-display); color: var(--ink); margin: 0; white-space: nowrap; }
+.c-price s { color: var(--muted); font-weight: 700; text-decoration-thickness: 2px; }
+.c-price b { color: var(--sky-deep); }
+.cmp .card .btn { margin-top: auto; align-self: flex-start; }
+
+/* témoignages des moitiés photo */
+.c-quote { margin: 1.4rem 0 0; padding: 1.1rem 1.4rem; border-left: 5px solid var(--sky); background: var(--sky-tint); border-radius: 0 14px 14px 0; }
+.c-quote p { font-weight: 700; font-style: italic; margin: 0 0 .4rem; }
+.c-quote cite { font-style: normal; font-size: .9rem; color: var(--muted); }
+
+/* reçu, sources, appel final */
+.c-recu { display: grid; grid-template-columns: auto 1fr; gap: 1.6rem; align-items: start; }
+.c-recu .ico-wrap { width: 72px; height: 72px; }
+.c-sources { margin-top: 1.6rem; font-size: .85rem; color: var(--muted); }
+.c-final-sec { background: var(--surface); }
+.c-final { background: var(--sky); color: #fff; border-radius: 28px; padding: clamp(1.8rem, 5vw, 3rem); display: flex; flex-wrap: wrap; gap: 1.6rem; align-items: center; justify-content: space-between; }
+.cmp .c-final h2 { color: #fff; margin-bottom: .2em; }
+.c-final p { margin: 0; font-weight: 600; font-size: 1.1rem; }
+.c-footnote { font-size: .82rem; color: var(--muted); margin: 1.4rem 0 0; max-width: 90ch; }
+
+/* diapositive de campagne du carrousel d'accueil */
+.hero-irw .slide.slide-cmp .title { font-family: "Barlow Condensed", "Arial Narrow", sans-serif; font-weight: 800; text-transform: uppercase; letter-spacing: .005em; line-height: .88; font-size: clamp(2.6rem, min(7vw, 8.5vh), 5.6rem); }
+.hero-irw .slide.slide-cmp .title b { display: block; color: #4fcbe6; }
+.hero-irw .slide.slide-cmp .c-tag { margin-inline: auto; }
+
+@media (max-width: 960px) {
+  .c-band-grid, .c-simu-grid { grid-template-columns: 1fr; }
+  .c-result { position: static; }
+}
+@media (max-width: 640px) {
+  .c-recu { grid-template-columns: 1fr; }
+  .c-tag span { font-size: 1.4rem; } .c-tag b { font-size: 2.3rem; }
+  .c-cd-num { font-size: 1.7rem; }
+}

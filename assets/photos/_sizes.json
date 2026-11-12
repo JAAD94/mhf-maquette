@@ -1,0 +1,678 @@
+{
+ "mere-enfant-sourire": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "xl",
+   "lg",
+   "md"
+  ]
+ },
+ "mamady-enseignant": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "xl",
+   "lg",
+   "md"
+  ]
+ },
+ "famille-rohingya-abri": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "garcon-robinet-eau": {
+  "w": 1920,
+  "h": 850,
+  "sizes": [
+   "xl",
+   "lg",
+   "md"
+  ]
+ },
+ "benevole-grand-mere": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "xl",
+   "lg",
+   "md"
+  ]
+ },
+ "repas-fourchette-client": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "fille-ecole-crayon": {
+  "w": 315,
+  "h": 333,
+  "sizes": [
+   "md"
+  ]
+ },
+ "fille-boit-eau": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "xl",
+   "lg",
+   "md"
+  ]
+ },
+ "mains-eau-robinet-dore": {
+  "w": 870,
+  "h": 677,
+  "sizes": [
+   "md"
+  ]
+ },
+ "fille-repas-colis": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "xl",
+   "lg",
+   "md"
+  ]
+ },
+ "garcon-sourire-porte": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "benevoles-colis-france": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "xl",
+   "lg",
+   "md"
+  ]
+ },
+ "garcon-classe-bonnet": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "femme-pompe-village": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "xl",
+   "lg",
+   "md"
+  ]
+ },
+ "mains-priere-chapelet": {
+  "w": 315,
+  "h": 333,
+  "sizes": [
+   "md"
+  ]
+ },
+ "coran-ouvert": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "chevre-aqiqa": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "chevre-portrait": {
+  "w": 315,
+  "h": 333,
+  "sizes": [
+   "md"
+  ]
+ },
+ "pain-mains": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "xl",
+   "lg",
+   "md"
+  ]
+ },
+ "assiettes-fourchette": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "chef-service": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "xl",
+   "lg",
+   "md"
+  ]
+ },
+ "chef-cuisine": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "femmes-distribution-colorees": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "xl",
+   "lg",
+   "md"
+  ]
+ },
+ "distribution-vue-aerienne": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "xl",
+   "lg",
+   "md"
+  ]
+ },
+ "camions-distribution": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "xl",
+   "lg",
+   "md"
+  ]
+ },
+ "enfant-tente": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "xl",
+   "lg",
+   "md"
+  ]
+ },
+ "camp-tentes": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "xl",
+   "lg",
+   "md"
+  ]
+ },
+ "inauguration-forage-sri-lanka": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "xl",
+   "lg",
+   "md"
+  ]
+ },
+ "benevoles-vue-aerienne": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "xl",
+   "lg",
+   "md"
+  ]
+ },
+ "equipe-benevoles": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "xl",
+   "lg",
+   "md"
+  ]
+ },
+ "soins-sante": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "ecoliers-sacs": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "xl",
+   "lg",
+   "md"
+  ]
+ },
+ "potager": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "atelier-couture": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "commercante-boutique": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "puits-village": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "xl",
+   "lg",
+   "md"
+  ]
+ },
+ "pompe-enfants": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "xl",
+   "lg",
+   "md"
+  ]
+ },
+ "assiette-iftar-mains": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "xl",
+   "lg",
+   "md"
+  ]
+ },
+ "benevoles-service": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "xl",
+   "lg",
+   "md"
+  ]
+ },
+ "distribution-repas": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "benevole-homme-age": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "maraude-nuit": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "jerricans-eau": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "xl",
+   "lg",
+   "md"
+  ]
+ },
+ "femme-jerrican": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "xl",
+   "lg",
+   "md"
+  ]
+ },
+ "creusement-puits": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "trois-enfants": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "enfant-bleu-sourire": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "benevoles-enfant-sri-lanka": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "garcon-classe": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "xl",
+   "lg",
+   "md"
+  ]
+ },
+ "bebe-zakat": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "homme-age-chapeau-rouge": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "grand-mere-jaune": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "femme-bol": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "artisan-travail": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "mains-nourriture": {
+  "w": 920,
+  "h": 570,
+  "sizes": [
+   "md"
+  ]
+ },
+ "benevoles-cuisine": {
+  "w": 1200,
+  "h": 630,
+  "sizes": [
+   "md"
+  ]
+ },
+ "enfants-balancoires": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "groupe-benevoles-sourires": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "enfants-assis": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "famille-sable": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "femme-riviere-eau": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "filles-jeu-eau": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "ecolieres-uniforme": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "mere-enfants-rose": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "grand-mere-recoit": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "fille-lecture": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "benevole-clinique": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "femme-sourire-foulard": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "femmes-marche": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "homme-enfant-bleu": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "enfant-boit": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "paysage-desert-arbre": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "distribution-foule": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "homme-puits": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "femme-enfant-portrait": {
+  "w": 1200,
+  "h": 630,
+  "sizes": [
+   "md"
+  ]
+ },
+ "enfants-benevole": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "priere-mosquee": {
+  "w": 1920,
+  "h": 642,
+  "sizes": [
+   "xl",
+   "lg",
+   "md"
+  ]
+ },
+ "grand-iftar": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "xl",
+   "lg",
+   "md"
+  ]
+ },
+ "homme-blanc-portrait": {
+  "w": 1200,
+  "h": 630,
+  "sizes": [
+   "md"
+  ]
+ },
+ "femmes-inondation": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "femme-travail": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ },
+ "garcon-bouteille": {
+  "w": 1920,
+  "h": 1080,
+  "sizes": [
+   "lg",
+   "md"
+  ]
+ }
+}

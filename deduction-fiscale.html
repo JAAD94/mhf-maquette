@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Don déductible des impôts : 66 % et 75 % | Muslim Hands</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="assets/site.css?v=20261019al">
+<script>
+window.PAGE = {
+  path: "/deduction-fiscale",
+  title: "Don déductible des impôts : 66 % et 75 % | Muslim Hands",
+  meta: "Don déductible des impôts : 66 % de réduction, 75 % jusqu'à 2 000 € pour l'aide alimentaire en France. 100 € coûtent 34 €. Simulateur, cases 7UD et 7UF.",
+  h1: "Don déductible des impôts à 66 % : ce que votre don vous coûte vraiment",
+  keyword: "don déductible des impôts 66 %",
+  ogImage: "assets/photos/benevole-grand-mere-lg.jpg",
+  breadcrumb: [["Accueil", "/", "index.html"], ["Nous soutenir", "/faire-un-don", "faire-un-don.html"], ["Déduction fiscale", "/deduction-fiscale"]],
+  faq: [
+    ["Combien me coûte réellement un don de 100 € ?", "34 € après réduction d'impôt de 66 %, ou 25 € si le don finance l'aide alimentaire et l'hébergement en France (75 % jusqu'à 2 000 € par an)."],
+    ["Quand reçois-je mon reçu fiscal ?", "Par e-mail immédiatement après un don en ligne. Pour les dons réguliers par prélèvement, un récapitulatif annuel vous parvient en janvier."],
+    ["La zakat est-elle déductible des impôts ?", "Oui. Versée à Muslim Hands France, association d'intérêt général, la zakat ouvre droit à la réduction de 66 % comme tout autre don."],
+    ["Jusqu'à quelle date pour l'année fiscale ?", "Tout don effectué avant le 31 décembre à minuit compte pour la déclaration de revenus de l'année suivante."],
+    ["Et si je ne paie pas d'impôt ?", "La réduction d'impôt ne peut pas dépasser l'impôt dû : si vous n'êtes pas imposable, elle ne s'applique pas. Votre don garde toute sa valeur sur le terrain."],
+    ["Les dons d'entreprise sont-ils déductibles ?", "Oui, au titre du mécénat : 60 % du don déductible de l'impôt sur les sociétés, dans la limite de 20 000 € ou de 0,5 % du chiffre d'affaires."]
+  ],
+  changes: ["Page nouvelle : le simulateur du staging est une page vide pour Google (rendu JavaScript, sans title ni H1)", "H1 unique sur « don déductible des impôts 66 % », title de 55 caractères, meta sous 155 caractères avec les deux taux", "Simulateur côté client conservé (ids don, taux, cout, detail) avec les deux taux et le plafond de 2 000 €", "Tableau des cases 7UF et 7UD, exemples chiffrés, section entreprises (#entreprises) à 60 %", "Photos nettes en 3 tailles avec alt, FAQ de 6 questions en JSON-LD, liens vers la zakat, la campagne hiver et la transparence"]
+};
+</script>
+</head>
+<body>
+<main id="contenu">
+  <section class="hero-irw hero-page" aria-label="En-tête">
+    <div class="slides"><figure class="slide is-active"><img sizes="100vw" data-photo="benevole-grand-mere" src="assets/photos/benevole-grand-mere-xl.jpg" alt="Un bénévole de Muslim Hands remet un colis chaleur à une grand-mère lors d'une distribution d'hiver" fetchpriority="high" style="object-position: 50% 30%"><div class="slide-text"><p class="kicker">Association d'intérêt général</p>
+<h1 class="title">100 € donnés, <b>34 € payés</b></h1>
+<p class="sub">Vos dons sont déductibles à 66 %, et à 75 % jusqu'à 2 000 € pour l'aide alimentaire en France.</p><a class="btn btn-sun" href="#simulateur">Simuler mon don</a></div></figure></div>
+  </section>
+  <div class="hero-after"><div class="wrap"><div class="hero-card"><div class="hero-actions"><a class="btn btn-navy" href="#simulateur"><i data-ico="calc"></i> Simuler mon don</a><a class="btn btn-sun" href="#don-widget"><i data-ico="heart"></i> Faire un don</a></div>
+        <ul class="hero-bullets">
+          <li><i data-ico="check" class="ico"></i> 100 € donnés vous coûtent 34 €, ou 25 € pour l'aide alimentaire en France</li>
+          <li><i data-ico="check" class="ico"></i> Reçu fiscal par e-mail dans la minute, récapitulatif annuel en janvier</li>
+          <li><i data-ico="check" class="ico"></i> Zakat, sadaqa et parrainage déductibles comme tout don</li>
+        </ul></div></div></div>
+
+  <section class="section bg-surface" id="simulateur-section">
+    <div class="wrap split">
+      <div>
+        <span class="eyebrow">Simulateur</span>
+        <h2>Combien me coûte vraiment mon don ?</h2>
+        <p class="lead">Saisissez un montant et le type de don. Le simulateur applique le bon taux et le plafond de 2 000 € du dispositif Coluche.</p>
+        <p>Le résultat est une estimation : la réduction est plafonnée à 20 % de votre revenu imposable et ne peut pas dépasser l'impôt que vous devez. L'excédent se reporte sur les cinq années suivantes.</p>
+        <div class="stats" style="margin-top:1.4rem">
+          <div class="stat"><span class="ico-wrap"><i data-ico="globe"></i></span><div><b>66 %</b><span>programmes internationaux, zakat, parrainage, puits</span></div></div>
+          <div class="stat"><span class="ico-wrap sun"><i data-ico="hexagon"></i></span><div><b>75 %</b><span>aide alimentaire et hébergement en France, jusqu'à 2 000 €</span></div></div>
+        </div>
+      </div>
+      <form class="calc card plain" id="simulateur" novalidate aria-label="Simulateur de réduction d'impôt">
+        <label for="don">Montant de mon don<input type="number" id="don" min="1" step="1" value="200" inputmode="decimal"></label>
+        <label for="taux">Type de don<select id="taux"><option value="0.66">Programmes internationaux, zakat, parrainage (66 %)</option><option value="0.75">Aide alimentaire et hébergement en France (75 % jusqu'à 2 000 €)</option></select></label>
+        <div class="result"><span class="muted" style="color:rgba(255,255,255,.75);font-size:.85rem;text-transform:uppercase;letter-spacing:.1em;font-weight:700">Après réduction d'impôt</span><b id="cout">Coût réel : 68 €</b><small id="detail">Réduction d'impôt de 132 €, dans la limite de 20 % de votre revenu imposable.</small></div>
+        <a class="btn btn-sun" href="faire-un-don.html" style="width:100%"><i data-ico="heart"></i> Faire ce don</a>
+      </form>
+    </div>
+  </section>
+
+    <section class="section half photo-right" id="66">
+    <div class="half-inner">
+      <div class="half-text"><div class="section-head"><span class="eyebrow">Déduction fiscale</span><h2>66 % : la règle générale pour les particuliers</h2></div><div class="prose flow"><p>Pour un particulier domicilié en France, 66 % du montant du don à une association d'intérêt général est déductible de l'impôt sur le revenu, dans la limite de 20 % du revenu imposable. Si vos dons dépassent ce plafond, l'excédent est reportable sur les cinq années suivantes, dans les mêmes conditions. Concrètement, 100 € donnés vous coûtent 34 €, 500 € vous coûtent 170 € et 1 000 € vous coûtent 340 €.</p><p>Il s'agit d'une réduction d'impôt, pas d'une déduction du revenu : elle vient directement diminuer l'impôt que vous devez. C'est donc le même avantage quel que soit votre taux d'imposition, dès que vous êtes imposable. Ce taux s'applique à tous nos programmes internationaux : <a href="construire-un-puits.html">puits</a>, <a href="parrainer-un-orphelin.html">parrainage d'orphelins</a>, <a href="urgences.html">urgences</a>, et à la <a href="zakat.html#impots">zakat</a>.</p></div></div>
+      <figure class="half-media"><img data-photo="grand-mere-recoit" src="assets/photos/grand-mere-recoit-lg.jpg" alt="Une grand-mère reçoit un colis des mains d&#x27;une bénévole" loading="lazy" sizes="(max-width: 900px) 100vw, 50vw"></figure>
+    </div>
+  </section>
+
+  <section class="section bg-surface don-section">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">Donner, concrètement</span><h2>Donner avant le 31 décembre</h2></div>
+      <div class="don-grid"><div class="donate" id="don-widget" data-rate="0.66">
+          
+          <div class="amounts"><button type="button" data-v="50">50 €</button><button type="button" data-v="100" aria-pressed="true">100 €</button><button type="button" data-v="200">200 €</button><button type="button" data-v="500">500 €</button><button type="button" data-v="1000">1 000 €</button><button type="button" data-v="0">Autre</button></div>
+          <p class="impact-line" data-cost><i data-ico="receipt"></i>100 € vous coûtent 34 € après réduction d'impôt de 66 %.</p>
+          <a class="btn btn-sun" href="faire-un-don.html" style="width:100%">Faire un don</a>
+          <p class="note">Reçu fiscal immédiat · paiement sécurisé · 80 % en missions sociales</p>
+        </div><div class="don-side"><div class="related"><h3>Pages liées</h3><ul><li><a href="faire-un-don.html">Faire un don</a></li><li><a href="campagne-hiver.html">Campagne hiver : 75 %</a></li><li><a href="zakat.html#impots">Zakat et impôts</a></li><li><a href="transparence.html">Où va votre don</a></li><li><a href="parrainer-un-orphelin.html">Parrainer un orphelin</a></li></ul></div></div></div>
+    </div>
+  </section>
+
+  <section class="section" id="75">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">Déduction fiscale</span><h2>75 % jusqu'à 2 000 € : les actions France éligibles</h2></div>
+      <div class="prose flow"><p>Le dispositif dit « Coluche » (article 200, 1 ter du Code général des impôts) porte la réduction à 75 % pour les dons qui financent la fourniture gratuite de repas ou de soins, ou l'aide au logement des personnes en difficulté. Il s'applique jusqu'à 2 000 € de dons par an et par foyer ; au-delà, la fraction qui dépasse bascule au taux de 66 %. Ce plafond, longtemps fixé à 1 000 €, a été porté à 2 000 € par la loi de finances pour 2026 pour les dons versés depuis le 14 octobre 2025. Un don de 1 000 € fléché sur ces actions vous coûte donc 250 €.</p><p>Chez Muslim Hands France, sont éligibles au taux de 75 % : les maraudes et les colis d'hiver, le restaurant solidaire La Fourchette Fraternelle à Marseille, les iftars solidaires du Ramadan et l'accompagnement des mineurs non accompagnés. Le reçu fiscal précise le taux applicable ; vous n'avez rien à calculer.</p><div class="grid grid-3" style="margin:1.5rem 0 0">
+          <a class="card" href="campagne-hiver.html"><img class="card-img" data-photo="mains-nourriture" src="assets/photos/mains-nourriture-md.jpg" alt="Des mains tendent une assiette de nourriture chaude à une personne dans le besoin" loading="lazy" sizes="(max-width: 880px) 100vw, 33vw"><div class="card-body"><h3>Campagne hiver</h3><p class="meta">Colis chaleur et repas chauds pour les sans-abri. 30 € vous coûtent 7,50 €.</p><span class="btn-link cta">Offrir un colis chaleur</span></div></a>
+          <a class="card" href="marseille.html"><img class="card-img" data-photo="repas-fourchette-client" src="assets/photos/repas-fourchette-client-md.jpg" alt="Un convive déjeune à table à La Fourchette Fraternelle" loading="lazy" sizes="(max-width: 880px) 100vw, 33vw"><div class="card-body"><h3>La Fourchette Fraternelle</h3><p class="meta">Un repas à table servi par un chef, à Marseille. 10 € vous coûtent 2,50 €.</p><span class="btn-link cta">Offrir un repas</span></div></a>
+          <a class="card" href="ramadan.html"><img class="card-img" data-photo="assiette-iftar-mains" src="assets/photos/assiette-iftar-mains-md.jpg" alt="Une assiette d'iftar tendue de main en main au coucher du soleil" loading="lazy" sizes="(max-width: 880px) 100vw, 33vw"><div class="card-body"><h3>Iftars solidaires</h3><p class="meta">Des repas de rupture du jeûne partagés en France pendant le Ramadan.</p><span class="btn-link cta">Offrir un iftar</span></div></a>
+        </div></div>
+    </div>
+  </section>
+
+  <section class="section bg-surface" id="exemples">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">Déduction fiscale</span><h2>Exemples chiffrés : ce que votre don vous coûte</h2></div>
+      <div class="prose flow"><div class="table-wrap"><table>
+          <thead><tr><th class="num">Don</th><th class="num">Coût réel à 66 %</th><th class="num">Coût réel à 75 %</th><th>Ce que cela finance</th></tr></thead>
+          <tbody>
+            <tr><td class="num">30 €</td><td class="num">10,20 €</td><td class="num">7,50 €</td><td>Un colis chaleur pour une personne sans abri</td></tr>
+            <tr><td class="num">50 €</td><td class="num">17 €</td><td class="num">12,50 €</td><td>Un colis alimentaire pour une famille pendant un mois</td></tr>
+            <tr><td class="num">100 €</td><td class="num">34 €</td><td class="num">25 €</td><td>Dix repas chauds à La Fourchette Fraternelle</td></tr>
+            <tr><td class="num">468 €</td><td class="num">159 €</td><td class="num">—</td><td>Un an de parrainage d'un orphelin (39 € par mois)</td></tr>
+            <tr><td class="num">900 €</td><td class="num">306 €</td><td class="num">—</td><td>Un puits de village pour 300 à 500 personnes</td></tr>
+            <tr><td class="num">2 500 €</td><td class="num">850 €</td><td class="num">670 €</td><td>75 % sur les 2 000 premiers euros, 66 % sur les 500 suivants</td></tr>
+          </tbody>
+        </table></div><p class="muted" style="font-size:.9rem;margin-top:.8rem">Le taux de 75 % ne s'applique qu'aux actions d'aide alimentaire et d'hébergement en France. Les montants sont arrondis au centime.</p></div>
+    </div>
+  </section>
+
+  <section class="section half photo-left" id="zakat">
+    <div class="half-inner">
+      <div class="half-text"><div class="section-head"><span class="eyebrow">Déduction fiscale</span><h2>La zakat est-elle déductible des impôts ?</h2></div><div class="prose flow"><p>Oui. La zakat versée à Muslim Hands France est, aux yeux de l'administration fiscale, un don à une association d'intérêt général : elle ouvre droit à la réduction de 66 % comme tout autre don. Certains donateurs choisissent de reverser le montant de la réduction en sadaqa ; c'est un choix personnel, pas une obligation. La zakat al fitr et le sacrifice de l'Aïd sont déductibles dans les mêmes conditions. <a href="zakat.html#impots">Zakat et impôts, en détail.</a></p></div></div>
+      <figure class="half-media"><img data-photo="commercante-boutique" src="assets/photos/commercante-boutique-lg.jpg" alt="Une commerçante sourit derrière le comptoir de sa boutique" loading="lazy" sizes="(max-width: 900px) 100vw, 50vw"></figure>
+    </div>
+  </section>
+
+  <section class="section half photo-right bg-surface" id="recu">
+    <div class="half-inner">
+      <div class="half-text"><div class="section-head"><span class="eyebrow">Déduction fiscale</span><h2>Votre reçu fiscal : quand et comment le recevoir</h2></div><div class="prose flow"><p>Pour un don en ligne, le reçu fiscal est envoyé par e-mail immédiatement après le paiement. Pour les dons réguliers par prélèvement, un récapitulatif annuel vous parvient en janvier, avec le total des douze mois. Pour un don par chèque ou virement, le reçu est édité sous quinze jours. Vous retrouvez tous vos reçus dans votre espace donateur, et vous pouvez en demander un duplicata au 01 49 48 05 05.</p><p>Le reçu mentionne le montant, la date, le taux de réduction applicable et nos références légales : association loi 1901 n° 1407, SIREN 498 845 502. Conservez-le trois ans : l'administration peut le demander.</p></div></div>
+      <figure class="half-media"><img data-photo="benevole-homme-age" src="assets/photos/benevole-homme-age-lg.jpg" alt="Un bénévole en gilet bleu discute avec un homme âgé lors d&#x27;une distribution" loading="lazy" sizes="(max-width: 900px) 100vw, 50vw"></figure>
+    </div>
+  </section>
+
+  <section class="section" id="declarer">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">Déduction fiscale</span><h2>Déclarer son don : cases 7UD et 7UF</h2><p class="lead">Vous n'avez pas à joindre vos reçus à la déclaration : vous reportez simplement vos totaux sur la déclaration 2042 RICI (réductions et crédits d'impôt), ou dans la rubrique « Dons » de la déclaration en ligne, et vous conservez les reçus en cas de demande de l'administration.</p></div>
+      <div class="prose flow"><div class="table-wrap"><table>
+          <thead><tr><th>Case</th><th>Dons concernés</th><th class="num">Taux</th><th>Plafond</th></tr></thead>
+          <tbody>
+            <tr><td><b>7UD</b></td><td>Dons aux organismes d'aide aux personnes en difficulté (repas, soins, logement) : nos actions en France</td><td class="num">75 %</td><td>2 000 € par an ; l'excédent est reporté automatiquement en 7UF</td></tr>
+            <tr><td><b>7UF</b></td><td>Dons aux associations d'intérêt général : programmes internationaux, zakat, parrainage, puits, urgences</td><td class="num">66 %</td><td>20 % du revenu imposable, excédent reportable 5 ans</td></tr>
+          </tbody>
+        </table></div><p style="margin-top:1rem">Tout don effectué avant le 31 décembre à minuit compte pour la déclaration de l'année suivante. Un don du 30 décembre 2026 apparaît donc sur la déclaration du printemps 2027, pour une réduction sur l'impôt 2026.</p><div class="steps" style="margin:1.4rem 0 2rem">
+          <div><h3>Je donne</h3><p>En ligne, par prélèvement, chèque ou virement, avant le 31 décembre.</p></div>
+          <div><h3>Je reçois mon reçu</h3><p>Immédiatement par e-mail, ou en janvier pour les dons réguliers.</p></div>
+          <div><h3>Je déclare</h3><p>Case 7UD pour les dons à 75 %, case 7UF pour les dons à 66 %.</p></div>
+          <div><h3>Je suis remboursé</h3><p>La réduction diminue l'impôt dû, ou vous est restituée si vous avez trop payé.</p></div>
+        </div></div>
+    </div>
+  </section>
+
+  <section class="section half photo-left bg-surface" id="entreprises">
+    <div class="half-inner">
+      <div class="half-text"><div class="section-head"><span class="eyebrow">Déduction fiscale</span><h2>Entreprises : le mécénat déductible à 60 %</h2></div><div class="prose flow"><p>Les entreprises soumises à l'impôt sur les sociétés ou à l'impôt sur le revenu bénéficient d'une réduction d'impôt de 60 % du montant du don, dans la limite de 20 000 € ou de 0,5 % du chiffre d'affaires hors taxes lorsque ce second montant est plus élevé. L'excédent est reportable sur cinq exercices. Le don peut être financier, en nature (produits, matériel) ou en compétences (mise à disposition de salariés).</p><p>Nous proposons aux entreprises des projets fléchés avec un rapport dédié : un puits au nom de l'entreprise, une classe d'une École de l'Excellence, une clinique mobile, un hiver de repas chauds à Marseille. Les contreparties (visibilité, événement avec les équipes) restent dans la limite de 25 % du don admise par l'administration. Contact mécénat : 01 49 48 05 05 ou <a href="mailto:contact@muslimhands.fr">contact@muslimhands.fr</a>.</p></div></div>
+      <figure class="half-media"><img data-photo="femmes-marche" src="assets/photos/femmes-marche-lg.jpg" alt="Des femmes vendent leurs produits sur un marché" loading="lazy" sizes="(max-width: 900px) 100vw, 50vw"></figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">Déduction fiscale</span><h2>Questions fréquentes sur la déduction fiscale des dons</h2></div>
+      <div class="prose flow"><div class="faq">
+          <details><summary>Combien me coûte réellement un don de 100 € ?</summary><p>34 € après réduction d'impôt de 66 %, ou 25 € si le don finance l'aide alimentaire et l'hébergement en France (75 % jusqu'à 2 000 € par an).</p></details>
+          <details><summary>Quand reçois-je mon reçu fiscal ?</summary><p>Par e-mail immédiatement après un don en ligne. Pour les dons réguliers, un récapitulatif annuel vous parvient en janvier.</p></details>
+          <details><summary>La zakat est-elle déductible des impôts ?</summary><p>Oui, comme tout don à une association d'intérêt général : 66 % du montant. <a href="zakat.html#impots">Zakat et impôts.</a></p></details>
+          <details><summary>Jusqu'à quelle date pour l'année fiscale ?</summary><p>Tout don effectué avant le 31 décembre à minuit compte pour la déclaration de l'année suivante.</p></details>
+          <details><summary>Et si je ne paie pas d'impôt ?</summary><p>La réduction ne peut pas dépasser l'impôt dû : si vous n'êtes pas imposable, elle ne s'applique pas. Votre don garde toute sa valeur sur le terrain.</p></details>
+          <details><summary>Les dons d'entreprise sont-ils déductibles ?</summary><p>Oui, au titre du mécénat : 60 % du don, dans la limite de 20 000 € ou de 0,5 % du chiffre d'affaires. <a href="#entreprises">Voir la section entreprises.</a></p></details>
+        </div></div>
+    </div>
+  </section>
+
+  <section class="impact side">
+    <img data-photo="benevoles-service" src="assets/photos/benevoles-service-xl.jpg" alt="Des bénévoles en gilet bleu servent des repas chauds lors d'une distribution en France" loading="lazy" sizes="100vw" style="object-position: 50% 30%">
+    <div class="wrap"><p class="big">100 € donnés, <em>34 €</em> dépensés.</p><div><p class="sub">Reçu fiscal dans la minute. Le reste, c'est l'État qui le prend en charge.</p><a class="btn btn-white" href="faire-un-don.html"><i data-ico="heart"></i> Faire un don</a></div></div>
+  </section>
+
+  <section class="section-tight bg-surface newsletter-section" id="restez-informe">
+    <div class="wrap">
+      <div class="newsletter">
+        <div><span class="eyebrow">Restez informé</span><h2>Une lettre par mois, le terrain en premier</h2><p class="muted" style="margin:0">Bilans de distribution, inaugurations de puits, dates du Ramadan et de l'Aïd. Pas de pression, désinscription en un clic.</p></div>
+        <form novalidate><label for="nl" class="visually-hidden" style="position:absolute;left:-9999px">Votre e-mail</label><input id="nl" type="email" placeholder="votre@email.fr" autocomplete="email"><button class="btn btn-sun" type="submit">Je m'abonne</button><p class="ok" data-confirm hidden>Merci ! Dans le site réel, un e-mail de confirmation vous est envoyé.</p></form>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="assets/site.js?v=20261019al"></script>
+<script src="assets/photos.js?v=20261019al"></script>
+<script>
+(function () {
+  const fmt = n => new Intl.NumberFormat("fr-FR", { maximumFractionDigits: 0 }).format(n) + " €";
+  const run = () => {
+    const d = Number(document.getElementById("don").value) || 0; const t = Number(document.getElementById("taux").value);
+    let red = t === 0.75 ? Math.min(d, 2000) * 0.75 + Math.max(0, d - 2000) * 0.66 : d * 0.66;
+    document.getElementById("cout").textContent = "Coût réel : " + fmt(d - red);
+    document.getElementById("detail").textContent = "Réduction d'impôt de " + fmt(red) + ", dans la limite de 20 % de votre revenu imposable.";
+  };
+  document.getElementById("simulateur").addEventListener("input", run); run();
+})();
+</script>
+</body>
+</html>

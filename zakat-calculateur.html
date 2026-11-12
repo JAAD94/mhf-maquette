@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Calculateur de zakat 2027 : nisab du jour | Muslim Hands</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="assets/site.css?v=20261019al">
+<script>
+window.PAGE = {
+  path: "/zakat-al-maal/calculateur",
+  title: "Calculateur de zakat 2027 : nisab du jour | Muslim Hands",
+  meta: "Calculez votre zakat al maal 2027 en 2 minutes : épargne, or, placements, dettes. Nisab or (9 900 €) et argent (1 154 €) à jour. Gratuit, sans inscription.",
+  h1: "Calculateur de zakat 2027 : votre zakat al maal en deux minutes",
+  keyword: "calcul zakat, calculateur zakat",
+  ogImage: "assets/photos/garcon-classe-lg.jpg",
+  breadcrumb: [["Accueil", "/", "index.html"], ["Zakat al Maal", "/zakat-al-maal", "zakat.html"], ["Calculateur", "/zakat-al-maal/calculateur"]],
+  faq: [
+    ["Nisab or ou nisab argent : lequel choisir ?", "La majorité des savants contemporains recommandent la base argent (595 g, soit 1 154 € au 18 octobre 2026), plus basse, donc plus favorable aux bénéficiaires. La base or (85 g, soit 9 900 €) reste admise. Le calculateur propose les deux."],
+    ["Dois-je inclure ma résidence principale ?", "Non. Les biens d'usage (logement habité, voiture, meubles, bijoux portés selon certains avis) ne sont pas zakatables. Un bien locatif n'est pas compté pour sa valeur : seuls les loyers encaissés et encore épargnés entrent dans le calcul."],
+    ["Et l'épargne salariale, le PEL, l'assurance-vie, les cryptomonnaies ?", "Ils entrent dans le calcul à leur valeur du jour dès qu'ils sont disponibles ou récupérables, même avec pénalité. Les cryptomonnaies sont traitées comme des liquidités. Un plan bloqué sans possibilité de retrait est compté l'année où il se débloque."],
+    ["Faut-il déduire ses dettes ?", "Oui, les dettes exigibles dans l'année : loyer ou mensualité du mois, crédit à la consommation, impôts dus, factures. Pour un crédit immobilier, on déduit en général les douze prochaines mensualités, pas le capital restant dû."],
+    ["Quand dois-je payer ma zakat ?", "À la date anniversaire lunaire (le hawl) du jour où votre patrimoine a dépassé le nisab pour la première fois. Beaucoup choisissent une date fixe du Ramadan pour s'en souvenir. Vous pouvez aussi l'étaler par prélèvement mensuel."],
+    ["Mon calcul est-il enregistré ?", "Non. Le calcul se fait dans votre navigateur, aucune donnée n'est envoyée ni conservée. Vous pouvez recommencer autant de fois que vous le souhaitez."],
+    ["La zakat versée est-elle déductible des impôts ?", "Oui. Muslim Hands France est d'intérêt général : 66 % du montant est déductible de l'impôt sur le revenu. 100 € de zakat vous coûtent 34 €. Le reçu fiscal est envoyé immédiatement par e-mail."]
+  ],
+  donate: { name: "Verser sa zakat al maal", target: "/donate/fonds/fonds-zakat-al-maal" },
+  changes: ["Page nouvelle : le bouton « Calculer ma Zakat » du staging ne menait nulle part", "Design v3 : hero photo à côté du texte, formulaire inchangé mais habillé, nisab daté et sourcé, module de don en marge", "Calculateur fonctionnel côté client, résultat qui se met à jour à chaque saisie", "Correction de la description du champ Pensions (copiée du champ Liquidités sur l'ancien site)", "Texte explicatif porté à plus de 1 000 mots : méthode en quatre étapes, nisab or ou argent, cas particuliers, hawl", "FAQ de 7 questions en JSON-LD, lien HTML vers la fiche de don du fonds zakat"]
+};
+</script>
+</head>
+<body>
+<main id="contenu">
+  <section class="hero-irw hero-page" aria-label="En-tête">
+    <div class="slides"><figure class="slide is-active"><img sizes="100vw" data-photo="garcon-classe" src="assets/photos/garcon-classe-xl.jpg" alt="Un garçon sourit dans sa classe, scolarisé grâce au parrainage financé par la zakat" fetchpriority="high" style="object-position: 55% 30%"><div class="slide-text"><p class="kicker">Gratuit, sans inscription</p>
+<h1 class="title">Votre zakat <b>en deux minutes</b></h1>
+<p class="sub">Biens zakatables, dettes, nisab du jour : le calculateur fait le total et applique les 2,5 %.</p><a class="btn btn-sun" href="#calculateur">Commencer le calcul</a></div></figure></div>
+  </section>
+  <div class="hero-after"><div class="wrap"><div class="hero-card"><div class="hero-actions"><a class="btn btn-sun" href="#don-widget"><i data-ico="calc"></i> Commencer le calcul</a><a class="btn btn-navy" href="zakat.html"><i data-ico="book"></i> Comprendre la zakat al maal</a></div>
+        <ul class="hero-bullets">
+          <li><i data-ico="check" class="ico"></i> Nisab or et argent mis à jour chaque lundi</li>
+          <li><i data-ico="check" class="ico"></i> Calcul dans votre navigateur, aucune donnée transmise</li>
+          <li><i data-ico="check" class="ico"></i> 100 € de zakat vous coûtent 34 € après réduction d'impôt</li>
+        </ul></div></div></div>
+
+    <section class="section bg-surface" id="calculateur">
+    <div class="wrap"><form class="calc" id="calc" novalidate>
+        <div class="nisab"><span class="eyebrow" style="margin:0">Nisab au 18 octobre 2026</span><label>Base du nisab<select id="base"><option value="1154">Argent, 595 g : 1 154 € (recommandé)</option><option value="9900">Or, 85 g : 9 900 €</option></select></label><small>Mis à jour chaque lundi d'après les cours de référence. <a href="#nisab">Pourquoi deux valeurs ?</a></small></div>
+        <div class="grid grid-2">
+          <label>Argent liquide, comptes courants et épargne<input type="number" id="cash" min="0" step="1" value="12000" inputmode="decimal"></label>
+          <label>Or et argent détenus (valeur du jour)<input type="number" id="gold" min="0" step="1" value="2500" inputmode="decimal"></label>
+          <label>Actions, placements, assurance-vie disponible<input type="number" id="invest" min="0" step="1" value="4000" inputmode="decimal"></label>
+          <label>Pensions et épargne retraite récupérables<input type="number" id="pension" min="0" step="1" value="0" inputmode="decimal"></label>
+          <label>Créances que vous êtes sûr de récupérer<input type="number" id="debts-owed" min="0" step="1" value="0" inputmode="decimal"></label>
+          <label>Biens locatifs : loyers encaissés et épargnés<input type="number" id="rent" min="0" step="1" value="0" inputmode="decimal"></label>
+          <label>Stocks et trésorerie de votre entreprise<input type="number" id="business" min="0" step="1" value="0" inputmode="decimal"></label>
+          <label>Dettes exigibles dans l'année (à déduire)<input type="number" id="debts" min="0" step="1" value="1500" inputmode="decimal"></label>
+        </div>
+        <div class="result" aria-live="polite">
+          <span>Total soumis à la zakat</span><span id="total" style="font-size:1.3rem;font-weight:700">17 000 €</span>
+          <span style="margin-top:.6rem">Votre zakat al maal (2,5 %)</span><b id="zakat">425 €</b>
+          <span id="status">Votre patrimoine dépasse le nisab : la zakat est due.</span>
+          <a class="btn btn-sun" href="zakat.html#don-widget" id="verser" style="margin-top:.8rem;justify-self:start">Verser 425 € au fonds Zakat al Maal</a>
+        </div>
+        <p class="note" style="color:var(--muted);font-size:.9rem;margin:0">Valeurs d'exemple pré-remplies. Le calcul se fait dans votre navigateur, rien n'est enregistré ni transmis.</p>
+      </form></div>
+  </section>
+
+  <section class="section bg-surface don-section">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">Donner, concrètement</span><h2>Et après le calcul ?</h2></div>
+      <div class="don-grid"><div class="donate" id="don-widget" data-rate="0.66">
+          
+          <p class="impact-line"><i data-ico="repeat"></i>Versez en une fois ou chaque mois ; cochez « Zakat » lors du don.</p>
+          <p class="impact-line"><i data-ico="shield"></i>Fonds zakat séparé, 100 % distribué aux huit catégories d'ayants droit.</p>
+          <a class="btn btn-sun" href="zakat.html#don-widget" style="width:100%">Verser au fonds Zakat al Maal</a>
+          <p class="note">Reçu fiscal immédiat : 66 % du montant déductible. <a href="zakat.html#ou-va">Où va votre zakat</a></p>
+        </div><div class="don-side"><div class="related"><h3>Ce qui entre dans le calcul</h3>
+          <div class="table-wrap"><table><thead><tr><th>Bien</th><th>Zakatable</th></tr></thead><tbody>
+            <tr><td>Liquidités, épargne</td><td>Oui, à 100 %</td></tr><tr><td>Or, argent</td><td>Oui, valeur du jour</td></tr><tr><td>Actions, fonds, crypto</td><td>Oui, valeur du jour</td></tr><tr><td>Résidence principale, voiture</td><td>Non</td></tr><tr><td>Bien locatif</td><td>Loyers épargnés seulement</td></tr><tr><td>Stocks professionnels</td><td>Oui</td></tr><tr><td>Dettes exigibles</td><td>À déduire</td></tr>
+          </tbody></table></div>
+        </div></div></div>
+    </div>
+  </section>
+
+    <section class="section">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">Calculateur</span><h2>Comment calculer sa zakat al maal ?</h2><p class="lead">La zakat al maal (zakât al-mâl) est l'aumône obligatoire sur le patrimoine, troisième pilier de l'islam. Son calcul tient en quatre étapes, que le calculateur ci-dessus reproduit ligne par ligne.</p></div>
+      <div class="prose flow"><div class="steps">
+          <div><h3>Additionnez vos biens zakatables</h3><p>Liquidités et épargne, or et argent, actions et placements, créances sûres, loyers épargnés, stocks et trésorerie professionnelle.</p></div>
+          <div><h3>Retirez vos dettes exigibles</h3><p>Ce que vous devez payer dans l'année : mensualités, impôts dus, factures, crédit à la consommation.</p></div>
+          <div><h3>Comparez au nisab</h3><p>Si le résultat dépasse le nisab, et l'a dépassé pendant toute l'année lunaire, la zakat est due.</p></div>
+          <div><h3>Versez 2,5 %</h3><p>Sur la totalité du patrimoine net, pas seulement sur la part qui dépasse le nisab.</p></div>
+        </div><p style="margin-top:1.2rem">Exemple : 12 000 € d'épargne, 2 500 € d'or, 4 000 € de placements, 1 500 € de dettes à régler. Patrimoine net : 17 000 €, au-dessus du nisab. Zakat due : 17 000 × 2,5 % = <b>425 €</b>, soit 144,50 € après réduction d'impôt.</p></div>
+    </div>
+  </section>
+
+  <section class="section half photo-right bg-surface" id="nisab">
+    <div class="half-inner">
+      <div class="half-text"><div class="section-head"><span class="eyebrow">Calculateur</span><h2>Nisab or ou nisab argent : lequel choisir ?</h2></div><div class="prose flow"><p>Le nisab (on écrit aussi nissab) est le seuil de richesse à partir duquel la zakat devient due. Il a été fixé par le Prophète en poids de métal : <b>85 g d'or</b> ou <b>595 g d'argent</b>. Comme les cours de l'or et de l'argent ont divergé, les deux valeurs sont aujourd'hui très différentes : au 18 octobre 2026, 9 900 € pour l'or et 1 154 € pour l'argent. La majorité des savants contemporains recommandent la base argent, plus basse, parce qu'elle fait entrer plus de personnes dans l'obligation et profite donc davantage aux pauvres. La base or reste admise, notamment pour qui ne possède que de l'or. Nous actualisons les deux chaque lundi.</p></div></div>
+      <figure class="half-media"><img data-photo="coran-ouvert" src="assets/photos/coran-ouvert-lg.jpg" alt="Un Coran ouvert sur un pupitre en bois, dans une lumière douce" loading="lazy" sizes="(max-width: 900px) 100vw, 50vw"></figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">Calculateur</span><h2>Qu'est-ce qui entre dans le calcul de la zakat ?</h2></div>
+      <div class="prose flow"><div class="feature-list" style="margin:1.2rem 0 1.6rem">
+          <div class="feature"><span class="ico-wrap green"><i data-ico="check"></i></span><div><h3>Liquidités et épargne</h3><p>Comptes courants, livrets, espèces, à 100 % de leur solde le jour du calcul.</p></div></div>
+          <div class="feature"><span class="ico-wrap sun"><i data-ico="coins"></i></span><div><h3>Or et argent</h3><p>Lingots, pièces, bijoux non portés : au cours du jour. Les bijoux portés sont exemptés selon plusieurs écoles.</p></div></div>
+          <div class="feature"><span class="ico-wrap"><i data-ico="globe"></i></span><div><h3>Placements</h3><p>Actions, fonds, assurance-vie rachetable, cryptomonnaies : valeur de marché du jour.</p></div></div>
+          <div class="feature"><span class="ico-wrap clay"><i data-ico="home"></i></span><div><h3>Immobilier</h3><p>Résidence principale exclue. Pour un bien loué, seuls les loyers encaissés et encore épargnés comptent ; un bien acheté pour être revendu compte en entier.</p></div></div>
+          <div class="feature"><span class="ico-wrap green"><i data-ico="receipt"></i></span><div><h3>Créances</h3><p>Les sommes qu'on vous doit et que vous êtes sûr de récupérer. Une créance douteuse est comptée l'année où elle est remboursée.</p></div></div>
+          <div class="feature"><span class="ico-wrap sun"><i data-ico="briefcase"></i></span><div><h3>Entreprise</h3><p>Stocks destinés à la vente et trésorerie, pas les machines, les locaux ni les véhicules.</p></div></div>
+        </div></div>
+    </div>
+  </section>
+
+  <section class="section half photo-left bg-surface">
+    <div class="half-inner">
+      <div class="half-text"><div class="section-head"><span class="eyebrow">Calculateur</span><h2>Cas particuliers : épargne salariale, PEL, retraite, crypto</h2></div><div class="prose flow"><p>L'<b>épargne salariale</b> (PEE, PERCO) entre dans le calcul dès qu'elle est débloquée ou déblocable, même avec pénalité ; un plan strictement bloqué est compté l'année de son déblocage. Le <b>PEL</b> et le <b>livret A</b> sont des liquidités : leur solde compte à 100 %. L'<b>épargne retraite</b> récupérable est zakatable ; une pension non encore versée ne l'est pas. Les <b>cryptomonnaies</b> sont traitées comme des liquidités à leur valeur du jour. Les <b>dettes</b> à déduire sont celles exigibles dans l'année : pour un crédit immobilier, la plupart des avis déduisent les douze prochaines mensualités, pas le capital restant. En cas de doute, le <a href="actualites.html">guide détaillé</a> traite chaque situation, et un imam reste votre meilleur conseil.</p></div></div>
+      <figure class="half-media"><img data-photo="commercante-boutique" src="assets/photos/commercante-boutique-lg.jpg" alt="Une commerçante sourit derrière le comptoir de sa boutique" loading="lazy" sizes="(max-width: 900px) 100vw, 50vw"></figure>
+    </div>
+  </section>
+
+  <section class="section half photo-right">
+    <div class="half-inner">
+      <div class="half-text"><div class="section-head"><span class="eyebrow">Calculateur</span><h2>Quand payer sa zakat ? Le hawl</h2></div><div class="prose flow"><p>La zakat est due une fois par année lunaire, à la date anniversaire du jour où votre patrimoine a dépassé le nisab pour la première fois : c'est le hawl. Si vous avez oublié cette date, choisissez-en une et gardez-la : beaucoup de donateurs retiennent une date du Ramadan, qui commence le 8 février 2027. Vous pouvez verser en une fois ou étaler par prélèvement mensuel, à condition que le total soit réglé avant le hawl suivant. Une zakat versée en avance est valable.</p></div></div>
+      <figure class="half-media"><img data-photo="femmes-marche" src="assets/photos/femmes-marche-lg.jpg" alt="Des femmes vendent leurs produits sur un marché" loading="lazy" sizes="(max-width: 900px) 100vw, 50vw"></figure>
+    </div>
+  </section>
+
+  <section class="section half photo-left bg-surface">
+    <div class="half-inner">
+      <div class="half-text"><div class="section-head"><span class="eyebrow">Calculateur</span><h2>Zakat et réduction d'impôt</h2></div><div class="prose flow"><p>Muslim Hands France est une association d'intérêt général : votre zakat ouvre droit à une réduction d'impôt sur le revenu de 66 %, dans la limite de 20 % du revenu imposable. <b>100 € de zakat vous coûtent 34 €</b> ; les 425 € de l'exemple reviennent à 144,50 €. Le reçu fiscal est envoyé par e-mail immédiatement après le don. <a href="deduction-fiscale.html">Tout savoir sur la déduction fiscale.</a></p></div></div>
+      <figure class="half-media"><img data-photo="priere-mosquee" src="assets/photos/priere-mosquee-lg.jpg" alt="Une personne prie seule dans une mosquée baignée de lumière" loading="lazy" sizes="(max-width: 900px) 100vw, 50vw"></figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">Calculateur</span><h2>Questions fréquentes sur le calcul de la zakat</h2></div>
+      <div class="prose flow"><div class="faq">
+          <details><summary>Nisab or ou nisab argent : lequel choisir ?</summary><p>La majorité des savants contemporains recommandent la base argent (595 g, soit 1 154 € au 18 octobre 2026), plus basse, donc plus favorable aux bénéficiaires. La base or (85 g, soit 9 900 €) reste admise. Le calculateur propose les deux.</p></details>
+          <details><summary>Dois-je inclure ma résidence principale ?</summary><p>Non. Les biens d'usage (logement habité, voiture, meubles, bijoux portés selon certains avis) ne sont pas zakatables. Un bien locatif n'est pas compté pour sa valeur : seuls les loyers encaissés et encore épargnés entrent dans le calcul.</p></details>
+          <details><summary>Et l'épargne salariale, le PEL, l'assurance-vie, les cryptomonnaies ?</summary><p>Ils entrent dans le calcul à leur valeur du jour dès qu'ils sont disponibles ou récupérables, même avec pénalité. Les cryptomonnaies sont traitées comme des liquidités. Un plan bloqué sans possibilité de retrait est compté l'année où il se débloque.</p></details>
+          <details><summary>Faut-il déduire ses dettes ?</summary><p>Oui, les dettes exigibles dans l'année : loyer ou mensualité du mois, crédit à la consommation, impôts dus, factures. Pour un crédit immobilier, on déduit en général les douze prochaines mensualités, pas le capital restant dû.</p></details>
+          <details><summary>Quand dois-je payer ma zakat ?</summary><p>À la date anniversaire lunaire (le hawl) du jour où votre patrimoine a dépassé le nisab pour la première fois. Beaucoup choisissent une date fixe du Ramadan pour s'en souvenir. Vous pouvez aussi l'étaler par prélèvement mensuel.</p></details>
+          <details><summary>Mon calcul est-il enregistré ?</summary><p>Non. Le calcul se fait dans votre navigateur, aucune donnée n'est envoyée ni conservée. Vous pouvez recommencer autant de fois que vous le souhaitez.</p></details>
+          <details><summary>La zakat versée est-elle déductible des impôts ?</summary><p>Oui. Muslim Hands France est d'intérêt général : 66 % du montant est déductible de l'impôt sur le revenu. 100 € de zakat vous coûtent 34 €. Le reçu fiscal est envoyé immédiatement par e-mail.</p></details>
+        </div></div>
+      <div class="don-side related-row"><figure class="photo"><img data-photo="bebe-zakat" src="assets/photos/bebe-zakat-lg.jpg" alt="Un bébé dans les bras de sa mère lors d'une distribution financée par la zakat" loading="lazy" sizes="(max-width: 900px) 100vw, 33vw"><figcaption>Programme nutrition financé par la zakat</figcaption></figure><div class="related"><h3>Pages liées</h3><ul><li><a href="zakat.html">Zakat al Maal 2027 : guide complet</a></li><li><a href="zakat-al-fitr.html">Zakat al Fitr 2027 : 7 € par personne</a></li><li><a href="ramadan.html">Ramadan 2027</a></li><li><a href="parrainer-un-orphelin.html">Parrainer un orphelin avec la zakat</a></li><li><a href="deduction-fiscale.html">Déduction fiscale</a></li></ul></div></div>
+    </div>
+  </section>
+
+  <section class="impact side">
+    <img data-photo="garcon-robinet-eau" src="assets/photos/garcon-robinet-eau-xl.jpg" alt="Un garçon remplit un bidon à un robinet d'eau potable installé dans son village" loading="lazy" sizes="100vw" style="object-position: 50% 50%">
+    <div class="wrap">
+      <p class="big">Votre zakat, <em>intégralement</em> distribuée.</p>
+      <div><p class="sub">Orphelins, familles sans ressources, victimes de crises : 100 % de la zakat va aux huit catégories d'ayants droit.</p><a class="btn btn-white" href="zakat.html#don-widget"><i data-ico="heart"></i> Verser ma zakat</a></div>
+    </div>
+    <span class="credit">Programme eau, 2025</span>
+  </section>
+
+  <section class="section-tight bg-surface newsletter-section" id="restez-informe">
+    <div class="wrap">
+      <div class="newsletter">
+        <div><span class="eyebrow">Restez informé</span><h2>Une lettre par mois, le terrain en premier</h2><p class="muted" style="margin:0">Bilans de distribution, inaugurations de puits, dates du Ramadan et de l'Aïd. Pas de pression, désinscription en un clic.</p></div>
+        <form novalidate><label for="nl" class="visually-hidden" style="position:absolute;left:-9999px">Votre e-mail</label><input id="nl" type="email" placeholder="votre@email.fr" autocomplete="email"><button class="btn btn-sun" type="submit">Je m'abonne</button><p class="ok" data-confirm hidden>Merci ! Dans le site réel, un e-mail de confirmation vous est envoyé.</p></form>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="assets/site.js?v=20261019al"></script>
+<script src="assets/photos.js?v=20261019al"></script>
+<script>
+(function () {
+  const ids = ["cash", "gold", "invest", "pension", "debts-owed", "rent", "business"];
+  const fmt = n => new Intl.NumberFormat("fr-FR", { maximumFractionDigits: 0 }).format(n) + " €";
+  const run = () => {
+    const sum = ids.reduce((s, id) => s + (Number(document.getElementById(id).value) || 0), 0);
+    const debts = Number(document.getElementById("debts").value) || 0;
+    const nisab = Number(document.getElementById("base").value);
+    const total = Math.max(0, sum - debts);
+    const due = total >= nisab;
+    const z = due ? Math.round(total * 0.025) : 0;
+    document.getElementById("total").textContent = fmt(total);
+    document.getElementById("zakat").textContent = fmt(z);
+    document.getElementById("status").textContent = due ? "Votre patrimoine dépasse le nisab : la zakat est due." : "Votre patrimoine est sous le nisab de " + fmt(nisab) + " : aucune zakat n'est due cette année.";
+    document.getElementById("verser").textContent = due ? "Verser " + fmt(z) + " au fonds Zakat al Maal" : "Faire une sadaqa";
+  };
+  document.getElementById("calc").addEventListener("input", run);
+  run();
+})();
+</script>
+</body>
+</html>

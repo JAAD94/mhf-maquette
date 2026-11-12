@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Changements appliqués dans le prototype | Muslim Hands</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="assets/site.css?v=20261019al">
+<script>
+window.PAGE = {
+  path: "/changements-prototype",
+  title: "Changements appliqués dans le prototype | Muslim Hands",
+  meta: "Page de travail : 4 bloquants d'indexation corrigés, 12 pages créées, photos nettes avec srcset et alt, carte, icônes. Ce que le prototype change.",
+  h1: "Ce que le prototype change par rapport au staging",
+  keyword: "page de travail, non indexable en production",
+  ogImage: "assets/photos/equipe-benevoles-lg.jpg",
+  breadcrumb: [["Accueil", "/", "index.html"], ["Changements appliqués", "/changements-prototype"]],
+  changes: ["Cette page n'existe pas sur le site final : elle sert à visualiser les corrections. À exclure du sitemap et à passer en noindex si elle est déployée."]
+};
+</script>
+</head>
+<body>
+<main id="contenu">
+  <section class="hero" style="padding-bottom:clamp(1.5rem,3vw,2.5rem)">
+    <div class="wrap">
+      <span class="eyebrow">Page de travail</span>
+      <h1>Ce que le prototype change par rapport au staging</h1>
+      <p class="lead">Chaque page de ce prototype applique les corrections de l'audit du 18 octobre 2026 et le design v3 (pages aérées, photos à côté du texte, icônes, FAQ). Le bouton « Fiche SEO » en bas à droite montre, page par page, ce que Google lira : title, meta, H1, données structurées, liens.</p>
+    </div>
+  </section>
+
+  <section class="section-tight bg-surface">
+    <div class="wrap stats">
+      <div class="stat"><span class="ico-wrap clay"><i data-ico="shield"></i></span><div><b>4</b><span>bloquants d'indexation levés</span></div></div>
+      <div class="stat"><span class="ico-wrap"><i data-ico="book"></i></span><div><b>12</b><span>pages créées, absentes du staging</span></div></div>
+      <div class="stat"><span class="ico-wrap green"><i data-ico="check"></i></span><div><b>1</b><span>H1 par page, alt sur chaque image</span></div></div>
+      <div class="stat"><span class="ico-wrap sun"><i data-ico="globe"></i></span><div><b>18</b><span>pays sur une carte HTML survolable</span></div></div>
+    </div>
+  </section>
+
+  <section class="section" id="indexation">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">Indexation</span><h2>Les quatre bloquants d'indexation</h2><p class="lead">Avant tout travail de contenu, quatre réglages empêchaient Google de lire le site.</p></div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Réglage</th><th>Staging</th><th>Prototype</th></tr></thead>
+        <tbody>
+          <tr><td><b>Langue</b></td><td><code>&lt;html lang="en"&gt;</code> sur les 157 pages.</td><td><code>&lt;html lang="fr"&gt;</code> partout, posé par le layout.</td></tr>
+          <tr><td><b>Robots</b></td><td><code>meta robots noindex</code> sur toutes les pages, robots.txt <code>Disallow: /</code>.</td><td><code>index, follow</code> sur chaque page ; robots.txt de production : <code>Disallow: /umbraco</code> et sitemap en URL absolue.</td></tr>
+          <tr><td><b>Sitemap</b></td><td>Limité aux 108 fiches <code>/donate/</code>, sans <code>lastmod</code>, sans page éditoriale.</td><td>Toutes les pages piliers, saisonnières, urgences, actualités et fiches de don dans un seul sitemap avec <code>lastmod</code> (fichier <code>sitemap.xml</code> livré).</td></tr>
+          <tr><td><b>Maillage vers le don</b></td><td>Boutons « Je fais un don » et « Calculer ma Zakat » en <code>&lt;button&gt;</code> sans lien ; 0 lien HTML des piliers vers les fiches de don.</td><td>Chaque pilier contient de vrais liens <code>&lt;a href&gt;</code> vers ses fiches de don et vers le calculateur. Le paiement N3O s'ouvre ensuite, sans priver Google du maillage.</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </section>
+
+  <section class="section bg-surface" id="balises">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">Balises</span><h2>Title, meta, H1, données structurées</h2></div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Élément</th><th>Staging</th><th>Prototype</th></tr></thead>
+        <tbody>
+          <tr><td><b>Title</b></td><td>Jusqu'à 69 caractères (Gaza), sans année sur les pages saisonnières.</td><td>60 caractères maximum, année 2027 sur zakat, Ramadan, Aïd ; mot-clé en tête.</td></tr>
+          <tr><td><b>Meta description</b></td><td>Absente sur qui-sommes-nous, actualités, fiches de don.</td><td>Présente partout, 155 caractères maximum, avec un chiffre.</td></tr>
+          <tr><td><b>H1</b></td><td>Plusieurs H1 ou aucun selon les pages ; H1 identique au title.</td><td>Un seul H1 par page, qui porte le mot-clé principal (« où va votre don », « don déductible des impôts 66 % », « nisab 2027 »).</td></tr>
+          <tr><td><b>Canonical, Open Graph</b></td><td>Absents.</td><td>Canonical auto-référente, Open Graph avec image par page (<code>ogImage</code>).</td></tr>
+          <tr><td><b>JSON-LD</b></td><td>Organisation avec un numéro de téléphone erroné.</td><td>NGO corrigé (adresse, téléphone, réseaux), BreadcrumbList, FAQPage, DonateAction, Article selon la page.</td></tr>
+          <tr><td><b>FAQ</b></td><td>Aucune.</td><td>3 à 8 questions par page pilier, en HTML (<code>details</code>) et en JSON-LD côté serveur.</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </section>
+
+  <section class="section" id="design-v3-et-medias">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">Design v3 et médias</span><h2>Photos, carte, icônes</h2><p class="lead">Le design v3 abandonne le texte posé sur les photos : les images sont dans des cadres à côté du texte, et chaque image est servie en trois tailles.</p></div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Élément</th><th>Staging</th><th>Prototype</th></tr></thead>
+        <tbody>
+          <tr><td><b>Photos</b></td><td>Images floues redimensionnées en CSS, une seule taille, souvent sans <code>alt</code>.</td><td>Photos nettes en 900, 1 400 et 1 920 px avec <code>srcset</code> (<code>assets/photos.js</code>), <code>alt</code> descriptif en français sur chacune, <code>loading="lazy"</code> hors hero.</td></tr>
+          <tr><td><b>Texte sur photo</b></td><td>Titres et boutons posés sur les visages dans les bandeaux.</td><td>Aucun texte sur un visage. Seul le bandeau d'impact porte une phrase courte, en bas, sur un dégradé discret.</td></tr>
+          <tr><td><b>Carte</b></td><td>Image JPG des pays, non cliquable, non indexable.</td><td>Carte SVG inline (<code>data-map</code>) avec liste HTML des 18 pays, survol synchronisé, sur l'accueil et <a href="qui-sommes-nous.html#carte">qui-sommes-nous#carte</a>.</td></tr>
+          <tr><td><b>Icônes</b></td><td>Police d'icônes externe, sans alternative textuelle.</td><td>Sprite SVG inline (<code>data-ico</code>), 23 pictogrammes au trait, <code>aria-hidden</code>, à côté de chaque domaine, statistique et point de contact.</td></tr>
+          <tr><td><b>Répartition des dons</b></td><td>Image JPG dans le pied de page.</td><td>Tableau HTML indexable sur <a href="transparence.html">transparence.html</a>, repris en tuiles chiffrées.</td></tr>
+          <tr><td><b>Typographie</b></td><td>Police système, interlignes serrés.</td><td>Manrope pour les titres, Figtree pour le texte, sections très espacées, conteneur 1 200 px.</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </section>
+
+  <section class="section bg-surface" id="pages">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">Pages</span><h2>Pages créées, inexistantes sur le staging</h2></div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Page</th><th>Mot-clé visé</th><th>Pourquoi</th></tr></thead>
+        <tbody>
+          <tr><td><a href="zakat-calculateur.html">Calculateur de zakat</a></td><td>calcul zakat, calculateur zakat</td><td>Requête la plus forte du secteur ; le bouton du staging ne menait nulle part.</td></tr>
+          <tr><td><a href="zakat-al-fitr.html">Zakat al Fitr 2027</a></td><td>zakat al fitr montant 2027</td><td>Seule une fiche de don existait, sans montant ni date limite.</td></tr>
+          <tr><td><a href="ramadan.html">Ramadan 2027</a></td><td>ramadan 2027 date, dons ramadan</td><td>Neuf pages sur l'ancien site, aucune sur le staging.</td></tr>
+          <tr><td><a href="sacrifice-aid-al-adha.html">Sacrifice de l'Aïd al-Adha 2027</a></td><td>qurbani 2027, sacrifice aïd en ligne</td><td>Page à 1 236 mots et FAQ sur l'ancien site, perdue dans la refonte.</td></tr>
+          <tr><td><a href="sadaqa-jariya.html">Sadaqa jariya</a></td><td>sadaqa jariya</td><td>Seules des fiches produit existaient, sans page qui explique.</td></tr>
+          <tr><td><a href="waqf.html">Waqf</a></td><td>waqf, waqf en France</td><td>Requête moyenne occupée uniquement par de petits acteurs.</td></tr>
+          <tr><td><a href="deduction-fiscale.html">Déduction fiscale</a></td><td>don déductible des impôts 66 %, 75 %</td><td>Le simulateur du staging est une page vide pour Google ; simulateur conservé, cases 7UD et 7UF, entreprises.</td></tr>
+          <tr><td><a href="transparence.html">Transparence : où va votre don</a></td><td>où va votre don, muslim hands avis</td><td>Occuper la requête de réputation avant un tiers ; tableau 80 / 12 / 8, rapports, contrôles.</td></tr>
+          <tr><td><a href="urgence-soudan.html">Urgence Soudan</a> (+ Liban, Afghanistan, Pakistan)</td><td>don soudan, don liban</td><td>Trois urgences seulement sur le staging contre neuf avant.</td></tr>
+          <tr><td><a href="marseille.html">Marseille, Lyon, Paris</a></td><td>association humanitaire marseille</td><td>Les trois pages ville de l'ancien site n'avaient plus d'équivalent.</td></tr>
+          <tr><td><a href="campagne-hiver.html">Campagne hiver</a></td><td>colis hiver sans-abri don</td><td>Pic de novembre à février et argument fiscal à 75 %.</td></tr>
+          <tr><td><a href="actualites.html">Actualités</a> et <a href="article.html">gabarit d'article</a></td><td>longue traîne (nisab 2027, bilans, témoignages)</td><td>378 anciennes actualités à migrer ou rediriger ; gabarit avec auteur, dates, sommaire, FAQ.</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </section>
+
+  <section class="section" id="pages-2">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">Pages</span><h2>Pages existantes, enrichies</h2></div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Page</th><th>Staging</th><th>Prototype</th></tr></thead>
+        <tbody>
+          <tr><td><a href="index.html">Accueil</a></td><td>Trois bandeaux photo avec texte sur les visages, pas de chiffres, boutons sans lien.</td><td>H1 « association humanitaire musulmane », chiffres 2024, carte des 18 pays, liens vers chaque fiche de don, frise 1993-2027.</td></tr>
+          <tr><td><a href="zakat.html">Zakat al Maal</a></td><td>Title sans année, pas de nisab, bouton calculateur sans href.</td><td>Bloc nisab daté, lien vers le calculateur, section fiscalité, FAQ de 8 questions en JSON-LD, title avec l'année.</td></tr>
+          <tr><td><a href="parrainer-un-orphelin.html">Parrainer un orphelin</a></td><td>URL longue, pas de coût après impôt, pays non cliquables.</td><td>URL raccourcie, coût réel après impôt, pays cliquables vers les fiches, témoignages nommés.</td></tr>
+          <tr><td><a href="construire-un-puits.html">Construire un puits</a></td><td>Prix dispersés sur les fiches de don.</td><td>Tableau des prix avec liens, section « puits au nom d'un défunt », suivi GPS.</td></tr>
+          <tr><td><a href="urgence-gaza.html">Urgence Gaza</a></td><td>Title de 69 caractères, situation non datée.</td><td>Title raccourci, situation datée, bilan chiffré, partenaire PAM.</td></tr>
+          <tr><td><a href="qui-sommes-nous.html">Qui sommes-nous</a></td><td>Pas de meta description, histoire éclatée, pas de carte ni d'ancres.</td><td>H1 « association humanitaire musulmane fiable », frise 1993-2027, #actions avec icônes, #carte, gouvernance (noms à compléter), partenaires, presse, #benevolat avec formulaire, #contact.</td></tr>
+          <tr><td><a href="faire-un-don.html">Faire un don</a> et <a href="don-creuser-un-puits.html">fiches de don</a></td><td>Fiches en doublon, sans meta ni texte.</td><td>Meta description et texte unique sur chaque fiche, canonical pour les doublons.</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </section>
+
+  <section class="section bg-surface" id="umbraco">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">Umbraco</span><h2>Réglages techniques à reporter dans Umbraco</h2></div>
+      <div class="grid grid-2">
+        <div class="card plain"><span class="ico-wrap"><i data-ico="clock"></i></span><h3 style="margin-top:1rem">Avant la mise en ligne</h3><ul style="padding-left:1.1rem;margin:0;display:grid;gap:.4rem"><li>SeoToolkit 3.x (Umbraco 13) : meta, sitemap, robots, redirections.</li><li>Import du fichier <code>redirections-301.csv</code> (690 lignes).</li><li>Désactiver Swagger, corriger les slugs <code>don-regulier-N-</code>.</li><li>Consentement avant le cookie Umbraco Engage.</li><li>Figer les versions des bibliothèques (<code>hls.js@latest</code>).</li><li>Générer les trois tailles d'image (900, 1 400, 1 920 px) à l'upload dans la médiathèque.</li></ul></div>
+        <div class="card plain"><span class="ico-wrap green"><i data-ico="check"></i></span><h3 style="margin-top:1rem">Le jour J</h3><ul style="padding-left:1.1rem;margin:0;display:grid;gap:.4rem"><li>Retirer la protection HTTP et le <code>noindex</code>.</li><li>Publier robots.txt et sitemap, soumettre dans Search Console.</li><li>Tester 50 redirections au hasard et les 30 pages prioritaires.</li><li>Vérifier Core Web Vitals mobile sur accueil, zakat, parrainage, puits.</li><li>GA4 avec les événements de don.</li><li>Exclure cette page de travail du sitemap (ou la passer en <code>noindex</code>).</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-surface" id="maillage-2026-10-21">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">Maillage du 21 octobre 2026</span><h2>Chaque lien mène à une vraie page : sept pages créées, 148 liens reroutés</h2></div>
+      <div class="prose flow">
+        <p>Relecture de chacun des 90 liens cibles du prototype. Les liens qui menaient à une carte ou à une ligne de tableau (par exemple « Yémen » dans le menu, qui n'ouvrait qu'une carte de la page Urgences) mènent désormais à une page dédiée, avec un contenu informatif daté et sourcé, un module de don et une FAQ reprise en données structurées.</p>
+        <ul>
+          <li>Quatre pages d'urgence créées sur le gabarit de la page Soudan, après veille (OCHA, IPC, OIM, ACTED, communiqués Muslim Hands) : <a href="urgence-yemen.html">Yémen</a> (boulangeries d'Aden et de Ma'rib, et non de Sanaa), <a href="urgence-somalie.html">Somalie</a> (sécheresse puis inondations 2026), <a href="urgence-liban.html">Liban</a> (760 000 déplacés depuis mars 2026, 100 000 € confiés au PAM pour 8 122 personnes), <a href="urgence-afghanistan.html">Afghanistan</a> (retours du Pakistan et d'Iran, clinique et boulangerie de Kaboul).</li>
+          <li>Deux pages ville créées sur le gabarit de Marseille, avec les chiffres 2024 de l'ancien site : <a href="lyon.html">Lyon</a> (maraudes à la Part-Dieu, 175 mineurs non accompagnés) et <a href="paris.html">Paris et Saint-Ouen</a> (maraudes gare du Nord et porte de la Chapelle, iftars au siège). Les cartes « Nos actions à Lyon / Paris » de la page Marseille, les boutons « Nos actions en France » de l'accueil et de Qui sommes-nous y renvoient.</li>
+          <li>Page <a href="creer-une-cagnotte.html">Cagnotte solidaire</a> créée : occasions, fonctionnement, objectifs type, formulaire maquetté, FAQ ; les FAQ Puits et Parrainage et les deux liens de la page Faire un don y renvoient.</li>
+          <li>Menu : Urgences liste désormais Gaza, Soudan, Yémen, Somalie, Liban et Afghanistan, chacun vers sa page ; « Nos actions en France » propose Marseille, Lyon et Paris.</li>
+          <li>148 liens « Donner / Fiche » qui pointaient vers une ligne du catalogue des fiches (<code>don-creuser-un-puits.html#…</code>) mènent au module de don de la page concernée (<code>#don-widget</code>), ou à la section qui décrit l'offre : aqiqa, dix dernières nuits, fidya, intérêts bancaires, don du vendredi, projets de sadaqa jariya, fonds handicap, mécénat d'entreprise. Sur une même page, le lien devient une ancre interne.</li>
+          <li>Page Urgences : cartes Yémen, Somalie, Liban et Afghanistan réécrites avec les chiffres d'octobre 2026, liste « Donner pour un pays » et paragraphe de situation reliés aux nouvelles pages.</li>
+          <li>Sitemap porté à 35 URL ; typographie française appliquée aux nouvelles pages ; vérification : 914 liens internes, 0 cassé, 0 lien vers une carte ou une ligne de tableau.</li>
+          <li>À valider par l'équipe programmes avant mise en ligne : témoignages, montants des tableaux « Que finance mon don » des quatre pays, adresse du point de rendez-vous de Lyon, branchement du formulaire de cagnotte sur l'outil de collecte entre pairs.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="relecture-2026-10-21">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">Relecture du 21 octobre 2026</span><h2>Contrôle complet du prototype : liens, textes, typographie</h2></div>
+      <div class="prose flow">
+        <p>Vérification de toutes les pages avant intégration : maillage interne (fichiers et ancres), liens externes (réseaux sociaux, Google Fonts), images, titres, données structurées, erreurs JavaScript, cohérence des chiffres et typographie française.</p>
+        <ul>
+          <li>Ancres corrigées : <code>#commande</code> (fiche puits), <code>#don</code> (faire un don), <code>#repartition</code> (transparence), lien « entreprises » de la page santé vers la déduction fiscale.</li>
+          <li>Liens vides du pied de page remplacés par trois pages créées : <a href="mentions-legales.html">mentions légales</a>, <a href="politique-de-confidentialite.html">politique de confidentialité</a>, <a href="conditions-generales-du-don.html">conditions générales du don</a> (ajoutées au sitemap).</li>
+          <li>Page Transparence : rapports annuels 2019 à 2024 reliés aux PDF de l'ancien site, comptes certifiés reliés à l'Annuaire des entreprises (annonces au Journal officiel), chartes reliées, « Laisser un avis » relié à Trustpilot, exercice 2025 marqué « à paraître ».</li>
+          <li>Cohérence : réponse unique sur « puits et zakat » (deux pages), élevage de poules et projet couture décrits de la même façon partout, 120 € = 40,80 € après impôt partout, adresse e-mail unique contact@muslimhands.fr, montants toujours à deux décimales (23,80 €).</li>
+          <li>Typographie : espaces insécables devant : ; ! ? » et après «, dans les nombres (2 600), devant € et %, dans toutes les pages et les libellés du menu ; points de suspension typographiques.</li>
+          <li>Menus et pied de page : règle CSS supplémentaire supprimant toute puce ou marqueur de liste (Safari, Firefox).</li>
+          <li>Restent volontairement signalés à l'équipe : noms de la gouvernance, adresse de La Fourchette Fraternelle, prix 2027 du sacrifice et montants du parrainage « à confirmer », hébergeur à vérifier le jour de la bascule.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="section-tight bg-surface newsletter-section" id="restez-informe">
+    <div class="wrap">
+      <div class="newsletter">
+        <div><span class="eyebrow">Restez informé</span><h2>Une lettre par mois, le terrain en premier</h2><p class="muted" style="margin:0">Bilans de distribution, inaugurations de puits, dates du Ramadan et de l'Aïd. Pas de pression, désinscription en un clic.</p></div>
+        <form novalidate><label for="nl" class="visually-hidden" style="position:absolute;left:-9999px">Votre e-mail</label><input id="nl" type="email" placeholder="votre@email.fr" autocomplete="email"><button class="btn btn-sun" type="submit">Je m'abonne</button><p class="ok" data-confirm hidden>Merci ! Dans le site réel, un e-mail de confirmation vous est envoyé.</p></form>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="assets/site.js?v=20261019al"></script>
+<script src="assets/photos.js?v=20261019al"></script>
+</body>
+</html>
